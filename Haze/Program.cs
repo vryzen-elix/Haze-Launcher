@@ -5,8 +5,8 @@ using System.Net;
 using System.Text.Json;
 using System.Runtime.InteropServices;
 using System.Threading.Tasks;
-using WpfApp6.Services.Launch; // FakeAC
-using PlooshLauncher;          // Proc & PSBasics
+using WpfApp6.Services.Launch; 
+using PlooshLauncher;  
 
 class Config
 {
@@ -98,8 +98,7 @@ class Program
             config = new();
         }
     }
-
-    // ---------------- LAUNCH FLOW ----------------
+ 
 
     static async Task LaunchFortniteWithInjection()
     {
@@ -191,3 +190,4 @@ class Program
         await wc.DownloadFileTaskAsync(url, destination);
     }
 }
+
